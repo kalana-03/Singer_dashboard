@@ -1,0 +1,122 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// SINGER (SRI LANKA) PLC — FINANCIAL DATA
+// Single source of truth. All values in Rs. '000 as reported in PDF.
+// Object.freeze enforces immutability.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const financials = Object.freeze({
+  q3: {
+    group: {
+      revenue:         { y25: 35894181,  y24: 24881268 },
+      costOfSales:     { y25: 22923016,  y24: 15900640 },
+      directInterest:  { y25:  1705956,  y24:  1033857 },
+      grossProfit:     { y25: 11265209,  y24:  7946771 },
+      otherIncome:     { y25:   301980,  y24:   109728 },
+      sellAdmin:       { y25:  7293288,  y24:  5153846 },
+      impairment:      { y25:   276868,  y24:   178166 },
+      operatingProfit: { y25:  3997033,  y24:  2724487 },
+      financeCost:     { y25:   916299,  y24:   782705 },
+      financeIncome:   { y25:   302358,  y24:   331464 },
+      netFinanceCost:  { y25:   613941,  y24:   451241 },
+      vatFinServices:  { y25:   261056,  y24:   155148 },
+      profitBeforeTax: { y25:  3122036,  y24:  2118098 },
+      incomeTax:       { y25:  1016729,  y24:   690394 },
+      netProfit:       { y25:  2105307,  y24:  1427704 },
+      eps:             { y25:      1.73, y24:      1.18 },
+    },
+    company: {
+      revenue:         { y25: 32180665,  y24: 22506585 },
+      costOfSales:     { y25: 23020048,  y24: 15960166 },
+      directInterest:  { y25:        0,  y24:        0 },
+      grossProfit:     { y25:  9160617,  y24:  6546419 },
+      otherIncome:     { y25:   200180,  y24:    28777 },
+      sellAdmin:       { y25:  6156861,  y24:  4322490 },
+      impairment:      { y25:   132694,  y24:    76102 },
+      operatingProfit: { y25:  3071242,  y24:  2176604 },
+      financeCost:     { y25:   911216,  y24:   779430 },
+      financeIncome:   { y25:   232461,  y24:   245735 },
+      netFinanceCost:  { y25:   678755,  y24:   533695 },
+      vatFinServices:  { y25:    50000,  y24:    20000 },
+      profitBeforeTax: { y25:  2342487,  y24:  1622909 },
+      incomeTax:       { y25:   726171,  y24:   504999 },
+      netProfit:       { y25:  1616316,  y24:  1117910 },
+      eps:             { y25:      1.38, y24:      0.96 },
+    },
+  },
+  ytd: {
+    group: {
+      revenue:         { y25: 92890596,  y24: 64101925 },
+      costOfSales:     { y25: 59220461,  y24: 40651994 },
+      directInterest:  { y25:  4546627,  y24:  3004012 },
+      grossProfit:     { y25: 29123508,  y24: 20445919 },
+      otherIncome:     { y25:   564838,  y24:   289234 },
+      sellAdmin:       { y25: 19081759,  y24: 14282624 },
+      impairment:      { y25:   575820,  y24:   481385 },
+      operatingProfit: { y25: 10030767,  y24:  5971144 },
+      financeCost:     { y25:  2481246,  y24:  2414960 },
+      financeIncome:   { y25:   953659,  y24:  1016250 },
+      netFinanceCost:  { y25:  1527587,  y24:  1398710 },
+      vatFinServices:  { y25:   720504,  y24:   414053 },
+      profitBeforeTax: { y25:  7782676,  y24:  4158381 },
+      incomeTax:       { y25:  2607653,  y24:  1382844 },
+      netProfit:       { y25:  5175023,  y24:  2775537 },
+      eps:             { y25:      4.24, y24:      2.28 },
+    },
+    company: {
+      revenue:         { y25: 82932680,  y24: 57670478 },
+      grossProfit:     { y25: 23473845,  y24: 16903272 },
+      operatingProfit: { y25:  7577252,  y24:  4870187 },
+      profitBeforeTax: { y25:  5654251,  y24:  3072582 },
+      netProfit:       { y25:  3861362,  y24:  2120081 },
+      eps:             { y25:      3.31, y24:      1.82 },
+    },
+  },
+  sharePrice: {
+    q3:  {
+      highest: { y25: 97.50, y24: 26.80 },
+      lowest:  { y25: 79.50, y24: 16.80 },
+      last:    { y25: 88.00, y24: 26.00 },
+    },
+    ytd: {
+      highest: { y25: 97.50, y24: 26.80 },
+      lowest:  { y25: 29.50, y24: 14.50 },
+      last:    { y25: 88.00, y24: 26.00 },
+    },
+  },
+  segments: {
+    company: {
+      ytd: [
+        { name: 'Home Appliances',      color: 'chart-red',    y25: 31692991, y24: 22045651 },
+        { name: 'Digital Products',      color: 'chart-blue',   y25: 19634063, y24: 13059002 },
+        { name: 'Consumer Electronics',  color: 'chart-amber',  y25:  9722399, y24:  8450671 },
+        { name: 'Other',                 color: 'chart-slate',  y25:  8902625, y24:  4500786 },
+        { name: 'Financial Services',    color: 'chart-green',  y25:  5563832, y24:  4279549 },
+        { name: 'Furniture',             color: 'chart-purple', y25:  4431709, y24:  3263765 },
+        { name: 'Sewing',               color: 'chart-teal',   y25:  2985061, y24:  2071054 },
+      ],
+    },
+    group: {
+      ytd: [
+        { name: 'Home Appliances',      color: 'chart-red',    y25: 31747864, y24: 22050766 },
+        { name: 'Digital Products',      color: 'chart-blue',   y25: 19634063, y24: 13059002 },
+        { name: 'Financial Services',    color: 'chart-green',  y25: 15466875, y24: 10705881 },
+        { name: 'Consumer Electronics',  color: 'chart-amber',  y25:  9722399, y24:  8450671 },
+        { name: 'Other',                color: 'chart-slate',  y25:  8902625, y24:  4500786 },
+        { name: 'Furniture',             color: 'chart-purple', y25:  4431709, y24:  3263765 },
+        { name: 'Sewing',               color: 'chart-teal',   y25:  2985061, y24:  2071054 },
+      ],
+    },
+  },
+  corporate: {
+    totalShares:        1167617912,
+    publicFloat:        127691294,
+    publicFloatPct:     10.94,
+    floatMarketCap:     11198526484,
+    largestShareholder: 'Hayleys PLC',
+    largestSharePct:    67.13,
+    interimDividend:    0.31,
+    dividendDate:       '30 December 2025',
+    netAssetsPerShare:  { y25: 15.87, y24dec: 11.49 },
+    totalEquityGroup:   { y25: 20382941, y24: 14575952 },
+  },
+});
