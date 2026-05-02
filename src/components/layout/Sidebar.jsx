@@ -8,7 +8,7 @@ export default function Sidebar() {
   const [active, setActive] = useState('dashboard');
 
   return (
-    <aside className="fixed left-0 top-header bottom-0 w-sidebar bg-surface-sidebar border-r border-surface-border z-sidebar flex flex-col">
+    <aside className="hidden md:flex fixed left-0 top-header bottom-0 w-sidebar bg-surface-sidebar border-r border-surface-border z-sidebar flex-col">
       {/* Top — Monogram */}
       <div className="px-5 py-5 flex items-center gap-3">
         <div className="w-80 h-10 bg-singer-gradient rounded-icon flex items-center justify-center">

@@ -7,7 +7,7 @@ export default function DashboardLayout({ children }) {
     <div className="min-h-screen bg-surface-page">
       <Header />
       <Sidebar />
-      <main className="ml-sidebar mt-header p-section-gap">
+      <main className="mt-header p-4 md:p-section-gap md:ml-sidebar">
         {children}
 
         {/* Footer */}

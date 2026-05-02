@@ -12,12 +12,12 @@ export default function Toggle({ options, value, onChange }) {
           key={opt.value}
           onClick={() => onChange(opt.value)}
           className={`
-            px-4 py-1.5 text-label font-medium tracking-wide
+            px-2 md:px-4 py-1 md:py-1.5 text-micro md:text-label font-medium tracking-wide
             transition-all duration-base ease-smooth
             cursor-pointer select-none
             ${value === opt.value ? 'toggle-active' : 'toggle-inactive border-0'}
           `}
-          style={{ minWidth: '56px' }}
+          style={{ minWidth: '40px' }}
           aria-pressed={value === opt.value}
         >
           {opt.label}
