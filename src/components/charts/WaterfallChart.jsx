@@ -113,7 +113,7 @@ export default function WaterfallChart({ data }) {
   const legendItems = [
     { color: chartColors.singerRed, label: 'Total / Subtotal' },
     { color: chartColors.green, label: 'Addition' },
-    { color: chartColors.prev, label: 'Deduction' },
+    { color: chartColors.singerDark, label: 'Deduction' },
   ];
 
   return (
