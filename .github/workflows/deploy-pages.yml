@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - deployment1
   workflow_dispatch:
 
 permissions:
