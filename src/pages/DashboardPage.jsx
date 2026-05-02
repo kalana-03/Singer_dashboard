@@ -17,7 +17,6 @@ export default function DashboardPage() {
     comparison,
     sharePrice,
     segments,
-    entity,
   } = useDashboardData();
 
   return (
