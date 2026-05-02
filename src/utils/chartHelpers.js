@@ -89,7 +89,7 @@ export function buildWaterfallData(data, year = 'y25') {
  * Shared Chart.js scale options for consistent styling
  */
 export function getScaleOptions(options = {}) {
-  const { showX = true, showY = true, horizontal = false, yCallback, xCallback } = options;
+  const { showX = true, showY = true, yCallback, xCallback } = options;
 
   const scaleBase = {
     grid: {
